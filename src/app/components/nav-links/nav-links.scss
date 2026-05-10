@@ -1,0 +1,17 @@
+.my-link {
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.my-link.active {
+    background-color: rgba(255, 255, 255, 0.22);
+    border-radius: 6px;
+}
+
+.active-menu {
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.08);
+}

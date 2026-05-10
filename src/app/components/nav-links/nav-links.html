@@ -1,0 +1,32 @@
+@if(mode === 'desktop'){
+
+  @for(link of links; track link.route){
+    <a
+      mat-button
+      class="my-link"
+      [routerLink]="link.route"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]= "{exact: true}"
+      ariaCurrentWhenActive="page"
+    >
+      <mat-icon [fontIcon]="link.icon"></mat-icon>
+        {{link.label}}
+    </a>
+  }
+}
+
+@if(mode === 'mobile'){
+
+  @for(link of links; track link.route){
+    <a
+      mat-menu-item
+      [routerLink]="link.route"
+      routerLinkActive="active-menu"
+      [routerLinkActiveOptions]= "{exact: true}"
+      ariaCurrentWhenActive="page"
+    >
+      <mat-icon [fontIcon]="link.icon"></mat-icon>
+        <span>{{link.label}}</span>
+    </a>
+  }
+}

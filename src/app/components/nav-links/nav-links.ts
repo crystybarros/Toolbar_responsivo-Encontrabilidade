@@ -36,7 +36,7 @@ export class NavLinks {
       icon: 'search',
     },
     {
-      label: 'Raltório',
+      label: 'Relatório',
       route: '/relatorio',
       icon: 'bar_chart',
     },
